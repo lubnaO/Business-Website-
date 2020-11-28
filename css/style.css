@@ -1,0 +1,238 @@
+/** Extra small devices (portrait phones, less than 576px)
+ No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }**/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+body{
+    font-family: 'Lato', sans-serif;
+    overflow-x: hidden;
+    color:#505962;
+   
+}
+.offset::before{
+    display: block;
+    content:"";
+    height:4rem;
+    margin-top: -4rem;;
+ }
+
+
+.logo{
+    width: 90px;
+    height: 35px;
+}
+
+.navbar{
+text-transform: uppercase;
+letter-spacing: .1rem;
+font-weight: 700;
+font-size: .9rem;
+background: rgba(0,0,0,.6);
+}
+.navbar-brand img{
+    height:2rem;
+}
+.navbar-nav li{
+    padding-right: .7rem;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color:white;
+    padding-top: 0.8rem;
+}
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: #1ebba3;
+
+}
+div.home-inner{   /**Background Transporant in home section **/
+
+ background-image: url("../image/backgroundtwo.jpg");
+    height:800px;
+    background-size: cover;
+    position: relative;
+    
+}
+
+div.caption{
+    position: absolute;
+    width: 100%;
+    max-width: 100%;
+    top: 38%;
+    z-index: 1;
+    color:white;
+}
+
+
+div.caption h1{
+    font-size:50px;
+    font-style: bold;
+    letter-spacing: 3px;
+}
+div.caption a{
+    margin-top: 20px;
+    border-width: 3px;
+}
+
+div.narrow{
+
+    margin-top: 40px;
+}
+
+/**about us Section Start here style**/
+
+.narrow{
+    
+    margin:1rem auto;
+   /** height: 800px;**/
+    padding-top: 0.1rem; 
+    padding: 2rem 2rem;          /**Narrow here for both about us and services section**/
+ 
+}
+.narrow h1{
+    font-size: 2.4rem;
+}
+
+div.narrow a{
+    border-width: medium;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 0.6rem 1.2rem;
+    color: white;
+    background-color: #1ebba3 ;
+    border-color: #1ebba3;
+
+}
+
+div.narrow a:hover{
+  
+    background-color: #1f554d ;
+    border-color: #1ebba3;
+
+}
+
+/**about us Section end here style**/
+
+/**Services Section Start here style**/
+.heading{
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+
+}
+.heading-underline{
+    width:10rem;
+    height: 0.1rem;
+    background-color:#1ebba3 ;
+    margin: 0 auto;   /**This code Make the line in the center**/
+    margin-bottom: 20px;
+}
+
+.feature  fa-project-diagram{
+    width:100px;
+    margin: 20px 0;
+    color: red;
+    margin-bottom: 30px;
+
+}
+.feature h4{
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    font-size: 1.4rem;
+}
+.feature p{
+    font-size: 1.1rem;
+}
+
+/**Services Section End here style**/
+
+
+/**feature Section Start here style**/
+
+#feature{
+   background-image: url("../image/backgroundtwo.jpg");
+   z-index: -1;
+   background-attachment: fixed;
+   background-size: cover; 
+   /**height: 600px;**/
+  
+  
+}
+.dark{
+    color:white;
+    background-color: rgba(0,0,0,0.75);
+    padding: 8rem 2rem;
+    /**margin-bottom: 6rem;**/
+   /** height: 600px;**/
+}
+.fixed-background h2{
+    margin-bottom:1rem ;
+}
+
+
+.fixed-background p{
+   margin-top: 1.5rem;
+}
+/**feature Section End here style**/
+
+/**Client Section Start here style**/
+/**.jubronclient{
+    padding: 8rem 2rem;
+}**/
+.clients{
+    margin-top: 40px;
+}
+.clients img{
+    width:100%;
+    border-radius: 50%;
+}
+.mmon{
+    color:#1ebba3;
+}
+
+.client-hr{
+    border-top: 0.05rem solid #1ebba3;
+}
+/**Client Section End here style**/
+
+
+/**Contact Section Start here style**/
+footer{
+    background-color: #40474e;
+    color:white;
+  
+    /**margin-top: 1rem;**/
+}
+.logo-footer{
+    height: 30px;
+    width: 60px;
+    margin: 1.5rem 0;
+}
+footer i{
+    margin: 1.5rem 2rem;
+}
+
+footer i:hover{
+    color:#1ebba3 ;
+}
+hr.socket{
+    width: 100%;
+    border-top: 0.2rem solid #505962;
+    margin-top: 3rem;
+    padding:0.3rem 0 0.3 0;
+}
+/**contact Section End here style**/
